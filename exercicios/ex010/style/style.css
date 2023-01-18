@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, skyblue,white);
+    height:100vh;
+}
+
+h1 {
+    color: rgb(0, 0, 70);
+}
+
+a{
+    text-decoration: none;
+}
+
+div.downloads {
+    border: grey 1px solid;
+    width: 400px;
+}
+
+div.downloads h1 {
+    text-align: center;
+}
+
+div.downloads li {
+    padding-left: 50px;
+    list-style-position: inside;
+}
+div.downloads li:hover {
+    text-decoration: underline;
+}

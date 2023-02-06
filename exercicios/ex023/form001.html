@@ -14,22 +14,58 @@
 <body>
     <h1>Formulário 01</h1>
 
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
-            <label for="iemail">Email:</label> 
-            <input type="email" name="email" id="iemail" required placeholder="Digite o email" autocomplete="email">
-        </p>
+    <fieldset>
+        <legend>Login data:</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Email here" autocomplete="email">
+            </p>
+            <p>
+                <label for="ipass">Password:</label>
+                <input type="password" name="pass" id="ipass" required minlength="8" maxlength="25" placeholder="Password here" autocomplete="current-password">
+            </p>
+    </fieldset>
+    <br>       
+    <fieldset>
+        <legend>Informations:</legend>
+        <form action="cadastro.php">
+            <p>
+                <label for="ipic">Upload your photo</label>
+                <input type="file" name="pic" id="ipic">
+            </p>
 
-        <p> 
-            <label for="ipass">Senha:</label>
-            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="25" placeholder="Digite a senha" autocomplete="current-password">
-        </p>
-        <p>
+            <p>
+                <label for="iname">Name: </label>
+                <input type="text" name="name" id="iname" required maxlength="10" size="15" autocomplete="name" placeholder="Your name here">
+            </p>
+            <p>
+                <label for="ilast-n">Last name:</label>
+                <input type="text" name="last-n" id="ilast-n" required maxlength="40" placeholder="Your last name here">
+            </p>
+            <p>
+                <label for="idate">Birth Date:</label>
+                <input type="date" name="date" id="idate" required>
+            </p>
+            <p>
+                <label for="ination">Nationality:</label>
+                <select name="nation" id="ination">
+                    <option disabled selected>Select your country</option>
+                    <option value="BR">Brazil</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="FR">France</option>
+                </select>
+            </p>
+            <p>Gender: <br>
+                <input type="radio" name="sexo" id="imale" value="M"><label for="sexo">Male</label><br>
+                <input type="radio" name="sexo" id="ifem" value="F"><label for="sexo">Female</label>
+            </p>
+
             <input type="submit" value="Submit">
             <input type="reset" value="Clear">
-        </p>
-
-    </form>
+        </form>
+    </fieldset>
     
 </body>
 </html>

@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+body {
+    background: url('/exercicios/ex025/mq002/img/cev-landscape.jpg');
+    background-position: left bottom;
+}

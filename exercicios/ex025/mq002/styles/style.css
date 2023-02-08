@@ -8,10 +8,8 @@
 
 html, body {
     width: 100vw;
-    height: 100vw;
+    height: 100%;
     background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 h1 {
@@ -19,4 +17,3 @@ h1 {
     text-shadow: 2px 2px 0px #1526a7;
     padding: 10px;
 }
-

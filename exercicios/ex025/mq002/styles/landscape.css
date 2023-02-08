@@ -3,4 +3,6 @@
 body {
     background: url('/exercicios/ex025/mq002/img/cev-landscape.jpg');
     background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
